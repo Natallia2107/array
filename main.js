@@ -78,5 +78,10 @@ console.table(ordered)
 
 // Array.prototype.reduce()
 // 4. how many years did all the inventors live
+const totalYears = inventors.reduce((total, inventor) => {
+	return total + (inventor.passed - inventor.year)
+}, 0)
+
+console.table(totalYears)
 
 // 5. sort the inventors by years lived
