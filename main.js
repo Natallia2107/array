@@ -60,6 +60,9 @@ console.table(inventorsBornIn1500)
 
 // Array.prototype.map()
 // 2. give us an array of the inventory first and last name
+const fullNames = inventors.map(inventor => `${inventor.first} ${inventor.last}`)
+
+console.table(fullNames)
 
 // Array.prototype.sort()
 // 3. sort the inventors by birthdate, oldest to yangest
