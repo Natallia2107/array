@@ -51,3 +51,17 @@ const people = [
 	'Blair, Tony',
 	'Blake, William',
 ]
+
+// Array.prototype.filter()
+// 1. filter the list of inventors for those who were born in the 1500's
+
+// Array.prototype.map()
+// 2. give us an array of the inventory first and last name  
+
+// Array.prototype.sort()
+// 3. sort the inventors by birthdate, oldest to yangest
+
+// Array.prototype.reduce()
+// 4. how many years did all the inventors live
+
+// 5. sort the inventors by years lived 
