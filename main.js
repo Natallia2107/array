@@ -102,6 +102,11 @@ const de = links
                 .filter(streetName => streetName.includes('de'))
 
 // 7. sort Exercise - sort the people alphabetically by lat name 
+const alpha = people.sort((lastOne, nextOne) => {
+    const [aLast, aFirst] = lastOne.split(', ')
+    const [bLast, bFirst] = lastOne.split(', ')
+    return aLast > bLast ? 1 : -1
+})
 
 // reduce exercise - sum up the instances od each od these 
 const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck']
