@@ -95,6 +95,11 @@ console.table(oldest)
 
 // 6. create a list of Boulevards in Paris that cointain 'de' anywhere in the name 
 // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
+const category = document.querySelector('.mw-category')
+const links = Array.from(category.querySelectorAll('a'))
+const de = links
+                .map(link => link.textContent)
+                .filter(streetName => streetName.includes('de'))
 
 // 7. sort Exercise - sort the people alphabetically by lat name 
 
